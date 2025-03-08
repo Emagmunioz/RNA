@@ -5,6 +5,7 @@ import static org.hamcrest.Matchers.*;
 import org.junit.jupiter.api.Test;
 
 import dev.evaRnai.bioengineeringModel.DNA;
+import dev.evaRnai.bioengineeringService.TranscriptionService;
 
 public class TranscriptionServiceTest {
     @Test
