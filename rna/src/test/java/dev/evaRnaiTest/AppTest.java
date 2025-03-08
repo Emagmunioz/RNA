@@ -1,4 +1,4 @@
-package dev.eva;
+package dev.evaRnaiTest;
 
 import org.junit.jupiter.api.Test;
 
