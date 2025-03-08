@@ -1,17 +1,15 @@
 package dev.evaRnai;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import dev.evaRnai.bioengineeringModel.DNA;
+import dev.evaRnai.bioengineeringService.TranscriptionService;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public final class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        DNA dna = new DNA("GCTA");
+        TranscriptionService service = new TranscriptionService();
+        String rna = service.transcribe(dna);
+        System.out.println("DNA: " + dna.getSequence());
+        System.out.println("RNA: " + rna);
     }
+  
 }
