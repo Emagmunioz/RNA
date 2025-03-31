@@ -2,6 +2,11 @@
 
 This project is part of a bioengineering initiative to develop targeted therapies using RNA interference (RNAi). The goal is to transcribe a given DNA sequence into its RNA complement, which is a crucial step in the RNAi process.
 
+
+
+![image](https://github.com/user-attachments/assets/7a5c9c2e-a77e-4276-af2b-c0967c997c0d)
+
+
 ## Project Overview
 
 The application takes a DNA sequence as input and generates the corresponding RNA sequence by replacing each nucleotide with its complement:
