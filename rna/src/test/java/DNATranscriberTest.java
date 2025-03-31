@@ -22,9 +22,15 @@ public class DNATranscriberTest {
 }
     @Test
     public void whenSingleC_thenReturnG() {
-    DNATranscriber transcriber = new DNATranscriber();
-    String rna = transcriber.transcribe("C");
-    assertThat(rna, is("G"));
+        DNATranscriber transcriber = new DNATranscriber();
+        String rna = transcriber.transcribe("C");
+        assertThat(rna, is("G"));
+}
+    @Test
+    public void whenAllNucleotides_thenReturnCorrectRNA() {
+        DNATranscriber transcriber = new DNATranscriber();
+        String rna = transcriber.transcribe("GCTA");
+        assertThat(rna, is("CGAU"));
 }
 }
 
