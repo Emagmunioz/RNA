@@ -20,5 +20,11 @@ public class DNATranscriberTest {
         String rna = transcriber.transcribe("G");
         assertThat(rna, is("C"));
 }
+    @Test
+    public void whenSingleC_thenReturnG() {
+    DNATranscriber transcriber = new DNATranscriber();
+    String rna = transcriber.transcribe("C");
+    assertThat(rna, is("G"));
+}
 }
 
