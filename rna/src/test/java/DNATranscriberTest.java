@@ -32,5 +32,10 @@ public class DNATranscriberTest {
         String rna = transcriber.transcribe("GCTA");
         assertThat(rna, is("CGAU"));
 }
+    @Test(expected = InvalidDNAException.class)
+    public void whenInvalidDNA_thenThrowException() {
+        DNATranscriber transcriber = new DNATranscriber();
+        transcriber.transcribe("GATB");
+}
 }
 
