@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class rnaiTest {
+public class DNATranscriberTest {
     
     @Test
     public void whenEmptyDNA_thenReturnEmptyRNA() {
