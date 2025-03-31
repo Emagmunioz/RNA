@@ -12,5 +12,23 @@ public class DNATranscriberTest {
         String rna = transcriber.transcribe("");
         assertThat(rna, is(emptyString()));
     }
+    @Test
+    public void whenSingleG_thenReturnC() {
+        String rna = transcriber.transcribe("G");
+        assertThat(rna, is("C"));
+    }
+
+    @Test
+    public void whenSingleC_thenReturnG() {
+        String rna = transcriber.transcribe("C");
+        assertThat(rna, is("G"));
+    }
+
+    @Test
+    public void whenAllNucleotides_thenReturnCorrectRNA() {
+        String rna = transcriber.transcribe("GCTA");
+        assertThat(rna, is("CGAU"));
+    }
+
 
 }
