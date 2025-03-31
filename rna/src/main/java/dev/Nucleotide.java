@@ -20,5 +20,7 @@ public enum Nucleotide {
                 return n.rnaComplement;
             }
         }
-}
+
+throw new IllegalArgumentException("Invalid DNA nucleotide: " + dnaSymbol);
+    }
 }
