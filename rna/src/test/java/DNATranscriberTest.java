@@ -14,5 +14,11 @@ public class DNATranscriberTest {
         String rna = transcriber.transcribe("");
         assertThat(rna, is(emptyString()));
     }
+    @Test
+    public void whenSingleG_thenReturnC() {
+        DNATranscriber transcriber = new DNATranscriber();
+        String rna = transcriber.transcribe("G");
+        assertThat(rna, is("C"));
+}
 }
 
