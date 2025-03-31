@@ -1,6 +1,6 @@
 package dev;
 import dev.Nucleotide;
-
+    
 public class DNATranscriber {
     
     public String transcribe(String dna) {
@@ -15,6 +15,11 @@ public class DNATranscriber {
             rna.append(Nucleotide.getRNAComplement(nucleotide));
         }
         return rna.toString();
+    }
+
+    private void validateDNA(String dna) {
+       
+        throw new UnsupportedOperationException("Unimplemented method 'validateDNA'");
     }
 
     

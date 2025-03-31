@@ -20,6 +20,7 @@ public enum Nucleotide {
                 return n.rnaComplement;
             }
         }
+        return dnaSymbol;
 
     }
     public static boolean isValid(char symbol) {
@@ -29,5 +30,11 @@ public enum Nucleotide {
             }
         }
         return false;
+    }
+    public char getDnaSymbol() {
+        return dnaSymbol;
+    }
+    public char getRnaComplement() {
+        return rnaComplement;
     }
 }
