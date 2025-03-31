@@ -25,6 +25,10 @@ public class NucleotideTest {
         char complement = Nucleotide.getRNAComplement('T');
         assertThat(complement, is('A'));
     }
+    @Test(expected = IllegalArgumentException.class)
+    public void whenInvalidNucleotide_thenThrowException() {
+        Nucleotide.getRNAComplement('X');
+    }
 
 
 }
