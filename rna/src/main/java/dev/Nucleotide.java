@@ -21,6 +21,13 @@ public enum Nucleotide {
             }
         }
 
-throw new IllegalArgumentException("Invalid DNA nucleotide: " + dnaSymbol);
+    }
+    public static boolean isValid(char symbol) {
+        for (Nucleotide nucleotide : values()) {
+            if (nucleotide.dnaSymbol == symbol) {
+                return true;
+            }
+        }
+        return false;
     }
 }
